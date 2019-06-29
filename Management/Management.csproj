@@ -1,0 +1,525 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E2E4A37D-EBA1-4ED6-B67C-58E37A8FE3A4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Management</RootNamespace>
+    <AssemblyName>ZigguratManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>faviconBlack.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Export, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.1.UI, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v17.1.UI, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.1.Wizard, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v17.1.Win, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v17.1.Extensions, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.4.12\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdConfiguration\AdConfigurationView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdConfiguration\AdConfigurationView.Designer.cs">
+      <DependentUpon>AdConfigurationView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Auth\LoginView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Auth\LoginView.Designer.cs">
+      <DependentUpon>LoginView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Checkins\CheckinView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Checkins\CheckinView.Designer.cs">
+      <DependentUpon>CheckinView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cities\CitiesView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cities\CitiesView.Designer.cs">
+      <DependentUpon>CitiesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseBackupRecords\DatabaseBackupRecordsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseBackupRecords\DatabaseBackupRecordsView.Designer.cs">
+      <DependentUpon>DatabaseBackupRecordsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseInstaller.cs" />
+    <Compile Include="Extensions\ControlExtensions.cs" />
+    <Compile Include="FormValidator.cs" />
+    <Compile Include="BMI\BMICalculatorView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMI\BMICalculatorView.Designer.cs">
+      <DependentUpon>BMICalculatorView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\MainView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\MainView.Designer.cs">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Members\Contacts\ContactView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Members\Contacts\ContactView.Designer.cs">
+      <DependentUpon>ContactView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Members\DeletedMembers\DeletedMembersView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Members\DeletedMembers\DeletedMembersView.Designer.cs">
+      <DependentUpon>DeletedMembersView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Members\Memberships\MembershipView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Members\Memberships\MembershipView.Designer.cs">
+      <DependentUpon>MembershipView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Members\MemberView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Members\MemberView.Designer.cs">
+      <DependentUpon>MemberView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Members\Notes\NoteView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Members\Notes\NoteView.Designer.cs">
+      <DependentUpon>NoteView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Members\PersonalTrainingRecords\PersonalTrainingRecordView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Members\PersonalTrainingRecords\PersonalTrainingRecordView.Designer.cs">
+      <DependentUpon>PersonalTrainingRecordView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Members\Search\MemberSearchView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Members\Search\MemberSearchView.Designer.cs">
+      <DependentUpon>MemberSearchView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Messages\MessagesView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Messages\MessagesView.Designer.cs">
+      <DependentUpon>MessagesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Messages\MessageView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Messages\MessageView.Designer.cs">
+      <DependentUpon>MessageView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Misc\ProcessView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Misc\ProcessView.Designer.cs">
+      <DependentUpon>ProcessView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Misc\SplashScreenView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Misc\SplashScreenView.Designer.cs">
+      <DependentUpon>SplashScreenView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parameters\ParametersView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parameters\ParametersView.Designer.cs">
+      <DependentUpon>ParametersView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payments\NewPaymentView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payments\NewPaymentView.Designer.cs">
+      <DependentUpon>NewPaymentView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products\ProductView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products\ProductView.Designer.cs">
+      <DependentUpon>ProductView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductTypes\ProductTypesView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductTypes\ProductTypesView.Designer.cs">
+      <DependentUpon>ProductTypesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\ReportView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportView.Designer.cs">
+      <DependentUpon>ReportView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportConfigurationView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportConfigurationView.Designer.cs">
+      <DependentUpon>ReportConfigurationView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\AskForQuantityView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\AskForQuantityView.Designer.cs">
+      <DependentUpon>AskForQuantityView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\NewSaleView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\NewSaleView.Designer.cs">
+      <DependentUpon>NewSaleView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShiftsAndQuotas\ShiftsAndQuotasView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShiftsAndQuotas\ShiftsAndQuotasView.Designer.cs">
+      <DependentUpon>ShiftsAndQuotasView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\StatisticsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistics\StatisticsView.Designer.cs">
+      <DependentUpon>StatisticsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trainers\TrainerView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trainers\TrainerView.designer.cs">
+      <DependentUpon>TrainerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trainings\Shifts\ShiftView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trainings\Shifts\ShiftView.Designer.cs">
+      <DependentUpon>ShiftView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trainings\TrainingView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trainings\TrainingView.designer.cs">
+      <DependentUpon>TrainingView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserProfileView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\UserProfileView.Designer.cs">
+      <DependentUpon>UserProfileView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Statistics\StatisticsView.resx">
+      <DependentUpon>StatisticsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\UserProfileView.resx">
+      <DependentUpon>UserProfileView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Resources\faviconBlack.ico" />
+    <None Include="Resources\imc.png" />
+    <None Include="Resources\database_32x32.png" />
+    <None Include="Resources\bar_32x32.png" />
+    <None Include="Resources\groupheader_32x32.png" />
+    <None Include="Resources\print_32x32.png" />
+    <None Include="Resources\historyitem_32x32.png" />
+    <None Include="Resources\buy_32x322.png" />
+    <None Include="Resources\buy_32x321.png" />
+    <None Include="Resources\buy_32x32.png" />
+    <None Include="Resources\costanalysis_32x32.png" />
+    <None Include="Resources\product_32x32.png" />
+    <None Include="Resources\version_32x321.png" />
+    <None Include="Resources\delete_32x325.png" />
+    <None Include="Resources\edit_32x323.png" />
+    <None Include="Resources\newproducts_32x32.png" />
+    <None Include="Resources\version_32x32.png" />
+    <None Include="Resources\refresh2_32x321.png" />
+    <None Include="Resources\refresh2_32x32.png" />
+    <None Include="Resources\delete_32x324.png" />
+    <None Include="Resources\edit_32x322.png" />
+    <None Include="Resources\mail_32x321.png" />
+    <None Include="Resources\article_32x32.png" />
+    <None Include="Resources\switchtimescalesto_32x32.png" />
+    <EmbeddedResource Include="AdConfiguration\AdConfigurationView.resx">
+      <DependentUpon>AdConfigurationView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Checkins\CheckinView.resx">
+      <DependentUpon>CheckinView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseBackupRecords\DatabaseBackupRecordsView.resx">
+      <DependentUpon>DatabaseBackupRecordsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMI\BMICalculatorView.resx">
+      <DependentUpon>BMICalculatorView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members\DeletedMembers\DeletedMembersView.resx">
+      <DependentUpon>DeletedMembersView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members\Memberships\MembershipView.resx">
+      <DependentUpon>MembershipView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members\PersonalTrainingRecords\PersonalTrainingRecordView.resx">
+      <DependentUpon>PersonalTrainingRecordView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members\Search\MemberSearchView.resx">
+      <DependentUpon>MemberSearchView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Messages\MessagesView.resx">
+      <DependentUpon>MessagesView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Messages\MessageView.resx">
+      <DependentUpon>MessageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Misc\ProcessView.resx">
+      <DependentUpon>ProcessView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payments\NewPaymentView.resx">
+      <DependentUpon>NewPaymentView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products\ProductView.resx">
+      <DependentUpon>ProductView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductTypes\ProductTypesView.resx">
+      <DependentUpon>ProductTypesView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportView.resx">
+      <DependentUpon>ReportView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportConfigurationView.resx">
+      <DependentUpon>ReportConfigurationView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\AskForQuantityView.resx">
+      <DependentUpon>AskForQuantityView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\NewSaleView.resx">
+      <DependentUpon>NewSaleView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShiftsAndQuotas\ShiftsAndQuotasView.resx">
+      <DependentUpon>ShiftsAndQuotasView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trainings\Shifts\ShiftView.resx">
+      <DependentUpon>ShiftView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trainings\TrainingView.resx">
+      <DependentUpon>TrainingView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Resources\delete_32x323.png" />
+    <None Include="Resources\edittask_32x321.png" />
+    <None Include="Resources\newtask_32x321.png" />
+    <None Include="Resources\default-profile.png" />
+    <EmbeddedResource Include="Parameters\ParametersView.resx">
+      <DependentUpon>ParametersView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trainers\TrainerView.resx">
+      <DependentUpon>TrainerView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Resources\employee_32x322.png" />
+    <None Include="Resources\task_32x32.png" />
+    <None Include="Resources\employee_32x321.png" />
+    <None Include="Resources\delete_32x322.png" />
+    <None Include="Resources\edit_32x321.png" />
+    <None Include="Resources\customer_32x322.png" />
+    <None Include="Resources\customer_32x321.png" />
+    <None Include="Resources\delete_32x321.png" />
+    <None Include="Resources\edittask_16x16.png" />
+    <None Include="Resources\edittask_32x32.png" />
+    <None Include="Resources\newtask_16x16.png" />
+    <None Include="Resources\newtask_32x32.png" />
+    <None Include="Resources\mail_32x32.png" />
+    <None Include="Resources\favicon-black-128.png" />
+    <None Include="Resources\favicon.ico" />
+    <None Include="Resources\favicon.png" />
+    <None Include="Resources\employee_32x32.png" />
+    <None Include="Resources\errorProvider.ico" />
+    <None Include="Resources\splash.jpg" />
+    <None Include="Resources\splash-brugnner.jpg" />
+    <EmbeddedResource Include="Auth\LoginView.resx">
+      <DependentUpon>LoginView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cities\CitiesView.resx">
+      <DependentUpon>CitiesView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\MainView.resx">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members\Contacts\ContactView.resx">
+      <DependentUpon>ContactView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members\MemberView.resx">
+      <DependentUpon>MemberView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members\Notes\NoteView.resx">
+      <DependentUpon>NoteView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Misc\SplashScreenView.resx">
+      <DependentUpon>SplashScreenView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Content Include="faviconBlack.ico" />
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="NLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Corlib\Corlib.csproj">
+      <Project>{dd6030d6-64d2-427d-989f-7b4ef0b08b8e}</Project>
+      <Name>Corlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_32x32.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>RD /S /Q "$(TargetDir)de\"
+RD /S /Q "$(TargetDir)de-DE\"
+RD /S /Q "$(TargetDir)ja\"
+RD /S /Q "$(TargetDir)ru\"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

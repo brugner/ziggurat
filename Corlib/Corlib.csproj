@@ -1,0 +1,809 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DD6030D6-64D2-427D-989F-7B4EF0B08B8E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Corlib</RootNamespace>
+    <AssemblyName>ZigguratCorlib</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=6.2.2.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.6.2.2\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Export, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Faker.NET4, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Faker.Net.1.0.3\lib\net40\Faker.NET4.dll</HintPath>
+    </Reference>
+    <Reference Include="FizzWare.NBuilder, Version=5.0.0.138, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NBuilder.5.0.0\lib\net40\FizzWare.NBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.4.12\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpRaven, Version=2.3.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpRaven.2.3.2\lib\net45\SharpRaven.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config\Gym.cs" />
+    <Compile Include="Config\MappingConfiguration\AutoMapperConfiguration.cs" />
+    <Compile Include="Config\MappingConfiguration\Profiles\DatabaseBackupRecordProfile.cs" />
+    <Compile Include="Config\MappingConfiguration\Profiles\PersonalTrainingRecordProfile.cs" />
+    <Compile Include="Config\MappingConfiguration\Profiles\MemberFinancialMovementProfile.cs" />
+    <Compile Include="Config\MappingConfiguration\Profiles\SaleProfile.cs" />
+    <Compile Include="Config\MappingConfiguration\Profiles\ProductProfile.cs" />
+    <Compile Include="Config\MappingConfiguration\Profiles\ProductTypeProfile.cs" />
+    <Compile Include="Config\MappingConfiguration\Profiles\PaymentProfile.cs" />
+    <Compile Include="Config\MappingConfiguration\Profiles\CheckinProfile.cs" />
+    <Compile Include="Config\MappingConfiguration\Profiles\MembershipProfile.cs" />
+    <Compile Include="Config\MappingConfiguration\Profiles\ShiftProfile.cs" />
+    <Compile Include="Config\MappingConfiguration\Profiles\CityProfile.cs" />
+    <Compile Include="Config\MappingConfiguration\Profiles\ContactProfile.cs" />
+    <Compile Include="Config\MappingConfiguration\Profiles\MemberProfile.cs" />
+    <Compile Include="Config\AppConfig.cs" />
+    <Compile Include="Config\MappingConfiguration\Profiles\MessageProfile.cs" />
+    <Compile Include="Config\MappingConfiguration\Profiles\NoteProfile.cs" />
+    <Compile Include="Config\MappingConfiguration\Profiles\ParameterProfile.cs" />
+    <Compile Include="Config\MappingConfiguration\Profiles\TrainerProfile.cs" />
+    <Compile Include="Config\MappingConfiguration\Profiles\TrainingProfile.cs" />
+    <Compile Include="Config\ModelConfiguration\AdModelConfiguration.cs" />
+    <Compile Include="Config\ModelConfiguration\DatabaseBackupRecordModelConfiguration.cs" />
+    <Compile Include="Config\ModelConfiguration\PersonalTrainingRecordModelConfiguration.cs" />
+    <Compile Include="Config\ModelConfiguration\MemberFinancialMovementModelConfiguration.cs" />
+    <Compile Include="Config\ModelConfiguration\SaleItemModelConfiguration.cs" />
+    <Compile Include="Config\ModelConfiguration\SaleModelConfiguration.cs" />
+    <Compile Include="Config\ModelConfiguration\CheckinModelConfiguration.cs" />
+    <Compile Include="Config\ModelConfiguration\MembershipModelConfiguration.cs" />
+    <Compile Include="Config\ModelConfiguration\PaymentModelConfiguration.cs" />
+    <Compile Include="Config\ModelConfiguration\ProductModelConfiguration.cs" />
+    <Compile Include="Config\ModelConfiguration\ProductTypeModelConfiguration.cs" />
+    <Compile Include="Config\ModelConfiguration\ShiftModelConfiguration.cs" />
+    <Compile Include="Config\ModelConfiguration\ContactModelConfiguration.cs" />
+    <Compile Include="Config\ModelConfiguration\MessageModelConfiguration.cs" />
+    <Compile Include="Config\ModelConfiguration\NoteModelConfiguration.cs" />
+    <Compile Include="Config\ModelConfiguration\ParameterModelConfiguration.cs" />
+    <Compile Include="Config\ModelConfiguration\TrainerModelConfiguration.cs" />
+    <Compile Include="Config\ModelConfiguration\TrainingModelConfiguration.cs" />
+    <Compile Include="Config\ModelConfiguration\UserModelConfiguration.cs" />
+    <Compile Include="Config\ModelConfiguration\CityModelConfiguration.cs" />
+    <Compile Include="Config\ModelConfiguration\StateModelConfiguration.cs" />
+    <Compile Include="Config\ModelConfiguration\MemberModelConfiguration.cs" />
+    <Compile Include="Config\Parameters.cs" />
+    <Compile Include="Config\LoggedInUser.cs" />
+    <Compile Include="Config\ValidationMessages.cs" />
+    <Compile Include="Core\Domain\Ad.cs" />
+    <Compile Include="Core\Domain\Checkin.cs" />
+    <Compile Include="Core\Domain\City.cs" />
+    <Compile Include="Core\Domain\Contact.cs" />
+    <Compile Include="Core\Domain\DatabaseBackupRecord.cs" />
+    <Compile Include="Core\Domain\MemberFinancialMovement.cs" />
+    <Compile Include="Core\Domain\Membership.cs" />
+    <Compile Include="Core\Domain\Message.cs" />
+    <Compile Include="Core\Domain\Note.cs" />
+    <Compile Include="Core\Domain\Parameter.cs" />
+    <Compile Include="Core\Domain\Payment.cs" />
+    <Compile Include="Core\Domain\PersonalTrainingRecord.cs" />
+    <Compile Include="Core\Domain\Product.cs" />
+    <Compile Include="Core\Domain\ProductType.cs" />
+    <Compile Include="Core\Domain\Sale.cs" />
+    <Compile Include="Core\Domain\SaleItem.cs" />
+    <Compile Include="Core\Domain\Shift.cs" />
+    <Compile Include="Core\Domain\State.cs" />
+    <Compile Include="Core\Domain\Member.cs" />
+    <Compile Include="Core\Domain\Trainer.cs" />
+    <Compile Include="Core\Domain\Training.cs" />
+    <Compile Include="Core\Domain\User.cs" />
+    <Compile Include="Core\IUnitOfWork.cs" />
+    <Compile Include="Core\Repositories\IAdRepository.cs" />
+    <Compile Include="Core\Repositories\IDatabaseBackupRecordRepository.cs" />
+    <Compile Include="Core\Repositories\IPersonalTrainingRecordRepository.cs" />
+    <Compile Include="Core\Repositories\IMemberFinancialMovementRepository.cs" />
+    <Compile Include="Core\Repositories\ISaleItemRepository.cs" />
+    <Compile Include="Core\Repositories\ISaleRepository.cs" />
+    <Compile Include="Core\Repositories\ICheckinRepository.cs" />
+    <Compile Include="Core\Repositories\ICityRepository.cs" />
+    <Compile Include="Core\Repositories\IContactRepository.cs" />
+    <Compile Include="Core\Repositories\IMembershipRepository.cs" />
+    <Compile Include="Core\Repositories\IMessageRepository.cs" />
+    <Compile Include="Core\Repositories\INoteRepository.cs" />
+    <Compile Include="Core\Repositories\IParameterRepository.cs" />
+    <Compile Include="Core\Repositories\IPaymentRepository.cs" />
+    <Compile Include="Core\Repositories\IProductRepository.cs" />
+    <Compile Include="Core\Repositories\IProductTypeRepository.cs" />
+    <Compile Include="Core\Repositories\IShiftRepository.cs" />
+    <Compile Include="Core\Repositories\ITrainerRepository.cs" />
+    <Compile Include="Core\Repositories\ITrainingRepository.cs" />
+    <Compile Include="Core\Repositories\IUserRepository.cs" />
+    <Compile Include="Core\Repositories\IMemberRepository.cs" />
+    <Compile Include="Core\Repositories\IRepository.cs" />
+    <Compile Include="Exceptions\ParametersNotFoundException.cs" />
+    <Compile Include="Extensions\DebtViewModelExtensions.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="EventArgs.cs" />
+    <Compile Include="Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Migrations\201801142040073_InitialModel.cs" />
+    <Compile Include="Migrations\201801142040073_InitialModel.Designer.cs">
+      <DependentUpon>201801142040073_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801150025088_AddContactsTable.cs" />
+    <Compile Include="Migrations\201801150025088_AddContactsTable.Designer.cs">
+      <DependentUpon>201801150025088_AddContactsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801180123022_AddParametersTable.cs" />
+    <Compile Include="Migrations\201801180123022_AddParametersTable.Designer.cs">
+      <DependentUpon>201801180123022_AddParametersTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801182155461_AddGymCityIdColumnToParametersTable.cs" />
+    <Compile Include="Migrations\201801182155461_AddGymCityIdColumnToParametersTable.Designer.cs">
+      <DependentUpon>201801182155461_AddGymCityIdColumnToParametersTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801200159424_AddProfilePicturePathToMembersTable.cs" />
+    <Compile Include="Migrations\201801200159424_AddProfilePicturePathToMembersTable.Designer.cs">
+      <DependentUpon>201801200159424_AddProfilePicturePathToMembersTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801201035306_AddProfilePictureSizeModeToMembersTable.cs" />
+    <Compile Include="Migrations\201801201035306_AddProfilePictureSizeModeToMembersTable.Designer.cs">
+      <DependentUpon>201801201035306_AddProfilePictureSizeModeToMembersTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801230203069_AddNotesTable.cs" />
+    <Compile Include="Migrations\201801230203069_AddNotesTable.Designer.cs">
+      <DependentUpon>201801230203069_AddNotesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201801250155108_AddTrainersTable.cs" />
+    <Compile Include="Migrations\201801250155108_AddTrainersTable.Designer.cs">
+      <DependentUpon>201801250155108_AddTrainersTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802032339411_AddSkinColumnToParametersTable.cs" />
+    <Compile Include="Migrations\201802032339411_AddSkinColumnToParametersTable.Designer.cs">
+      <DependentUpon>201802032339411_AddSkinColumnToParametersTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802041841116_TrainingsTableAndTrainersRelationship.cs" />
+    <Compile Include="Migrations\201802041841116_TrainingsTableAndTrainersRelationship.Designer.cs">
+      <DependentUpon>201802041841116_TrainingsTableAndTrainersRelationship.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802112237148_AddCreatedAndUpdatedAtToTrainingsTable.cs" />
+    <Compile Include="Migrations\201802112237148_AddCreatedAndUpdatedAtToTrainingsTable.Designer.cs">
+      <DependentUpon>201802112237148_AddCreatedAndUpdatedAtToTrainingsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802112320078_AddDeletedFieldsToTrainingsTable.cs" />
+    <Compile Include="Migrations\201802112320078_AddDeletedFieldsToTrainingsTable.Designer.cs">
+      <DependentUpon>201802112320078_AddDeletedFieldsToTrainingsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802121717037_AddSelectAtLeastOneToParametersTable.cs" />
+    <Compile Include="Migrations\201802121717037_AddSelectAtLeastOneToParametersTable.Designer.cs">
+      <DependentUpon>201802121717037_AddSelectAtLeastOneToParametersTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802121951164_AddQuarterPriceToTrainingsTable.cs" />
+    <Compile Include="Migrations\201802121951164_AddQuarterPriceToTrainingsTable.Designer.cs">
+      <DependentUpon>201802121951164_AddQuarterPriceToTrainingsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802122256214_AddSplitContainerMembersSplitterPositionToParametersTable.cs" />
+    <Compile Include="Migrations\201802122256214_AddSplitContainerMembersSplitterPositionToParametersTable.Designer.cs">
+      <DependentUpon>201802122256214_AddSplitContainerMembersSplitterPositionToParametersTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802141404187_AddMessagesTable.cs" />
+    <Compile Include="Migrations\201802141404187_AddMessagesTable.Designer.cs">
+      <DependentUpon>201802141404187_AddMessagesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802151219045_AddShiftsTable.cs" />
+    <Compile Include="Migrations\201802151219045_AddShiftsTable.Designer.cs">
+      <DependentUpon>201802151219045_AddShiftsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802161347026_AddMembershipsTable.cs" />
+    <Compile Include="Migrations\201802161347026_AddMembershipsTable.Designer.cs">
+      <DependentUpon>201802161347026_AddMembershipsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803101352559_AddCheckinsTable.cs" />
+    <Compile Include="Migrations\201803101352559_AddCheckinsTable.Designer.cs">
+      <DependentUpon>201803101352559_AddCheckinsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803160102289_AddSplitContainerMembersHorizontalSplitterPositionToParameterTable.cs" />
+    <Compile Include="Migrations\201803160102289_AddSplitContainerMembersHorizontalSplitterPositionToParameterTable.Designer.cs">
+      <DependentUpon>201803160102289_AddSplitContainerMembersHorizontalSplitterPositionToParameterTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803192247015_IsActiveChangedToStatusInMembershipsTable.cs" />
+    <Compile Include="Migrations\201803192247015_IsActiveChangedToStatusInMembershipsTable.Designer.cs">
+      <DependentUpon>201803192247015_IsActiveChangedToStatusInMembershipsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803282327296_AddPaymentTable.cs" />
+    <Compile Include="Migrations\201803282327296_AddPaymentTable.Designer.cs">
+      <DependentUpon>201803282327296_AddPaymentTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803282328230_RenameDateTimeToDate.cs" />
+    <Compile Include="Migrations\201803282328230_RenameDateTimeToDate.Designer.cs">
+      <DependentUpon>201803282328230_RenameDateTimeToDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803292318427_IsFullyPaidFieldToMembershipsTable.cs" />
+    <Compile Include="Migrations\201803292318427_IsFullyPaidFieldToMembershipsTable.Designer.cs">
+      <DependentUpon>201803292318427_IsFullyPaidFieldToMembershipsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803292321335_CommentFieldToPaymentsTable.cs" />
+    <Compile Include="Migrations\201803292321335_CommentFieldToPaymentsTable.Designer.cs">
+      <DependentUpon>201803292321335_CommentFieldToPaymentsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803300511361_DeleteSaleIdFromPaymentsTable.cs" />
+    <Compile Include="Migrations\201803300511361_DeleteSaleIdFromPaymentsTable.Designer.cs">
+      <DependentUpon>201803300511361_DeleteSaleIdFromPaymentsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803300521180_PaymentMembershipRelationship.cs" />
+    <Compile Include="Migrations\201803300521180_PaymentMembershipRelationship.Designer.cs">
+      <DependentUpon>201803300521180_PaymentMembershipRelationship.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803302231229_AddConceptFieldToPaymentsTable.cs" />
+    <Compile Include="Migrations\201803302231229_AddConceptFieldToPaymentsTable.Designer.cs">
+      <DependentUpon>201803302231229_AddConceptFieldToPaymentsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804011435352_AddProductAndProductTypesTables.cs" />
+    <Compile Include="Migrations\201804011435352_AddProductAndProductTypesTables.Designer.cs">
+      <DependentUpon>201804011435352_AddProductAndProductTypesTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804012253403_ProductIsActiveFromByteToBool.cs" />
+    <Compile Include="Migrations\201804012253403_ProductIsActiveFromByteToBool.Designer.cs">
+      <DependentUpon>201804012253403_ProductIsActiveFromByteToBool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804020015397_AddSaleAndSaleItemsTable.cs" />
+    <Compile Include="Migrations\201804020015397_AddSaleAndSaleItemsTable.Designer.cs">
+      <DependentUpon>201804020015397_AddSaleAndSaleItemsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804080054584_AddIsFullyPaidToSalesTable.cs" />
+    <Compile Include="Migrations\201804080054584_AddIsFullyPaidToSalesTable.Designer.cs">
+      <DependentUpon>201804080054584_AddIsFullyPaidToSalesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804080308584_PaymentMembershipSaleRelationships.cs" />
+    <Compile Include="Migrations\201804080308584_PaymentMembershipSaleRelationships.Designer.cs">
+      <DependentUpon>201804080308584_PaymentMembershipSaleRelationships.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804081717096_AddQuotaToShiftsTable.cs" />
+    <Compile Include="Migrations\201804081717096_AddQuotaToShiftsTable.Designer.cs">
+      <DependentUpon>201804081717096_AddQuotaToShiftsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804211133373_AddMemberFinancialMovementsTable.cs" />
+    <Compile Include="Migrations\201804211133373_AddMemberFinancialMovementsTable.Designer.cs">
+      <DependentUpon>201804211133373_AddMemberFinancialMovementsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804211212200_AddSaleNumber.cs" />
+    <Compile Include="Migrations\201804211212200_AddSaleNumber.Designer.cs">
+      <DependentUpon>201804211212200_AddSaleNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804211733401_AddReferenceFieldsInMemberFinancialMovementsTable.cs" />
+    <Compile Include="Migrations\201804211733401_AddReferenceFieldsInMemberFinancialMovementsTable.Designer.cs">
+      <DependentUpon>201804211733401_AddReferenceFieldsInMemberFinancialMovementsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804232321571_PersonalTrainingRecordsTable.cs" />
+    <Compile Include="Migrations\201804232321571_PersonalTrainingRecordsTable.Designer.cs">
+      <DependentUpon>201804232321571_PersonalTrainingRecordsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804240206347_HeigthToHeight.cs" />
+    <Compile Include="Migrations\201804240206347_HeigthToHeight.Designer.cs">
+      <DependentUpon>201804240206347_HeigthToHeight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805022304530_AddDatabaseBackupRecords.cs" />
+    <Compile Include="Migrations\201805022304530_AddDatabaseBackupRecords.Designer.cs">
+      <DependentUpon>201805022304530_AddDatabaseBackupRecords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805032226238_ParametersGymData.cs" />
+    <Compile Include="Migrations\201805032226238_ParametersGymData.Designer.cs">
+      <DependentUpon>201805032226238_ParametersGymData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805040113063_AdTable.cs" />
+    <Compile Include="Migrations\201805040113063_AdTable.Designer.cs">
+      <DependentUpon>201805040113063_AdTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805060458281_140To1000ForAdText.cs" />
+    <Compile Include="Migrations\201805060458281_140To1000ForAdText.Designer.cs">
+      <DependentUpon>201805060458281_140To1000ForAdText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805092229241_StartAndEndTimeInShiftsTable.cs" />
+    <Compile Include="Migrations\201805092229241_StartAndEndTimeInShiftsTable.Designer.cs">
+      <DependentUpon>201805092229241_StartAndEndTimeInShiftsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\SeedHelpers\CitiesSeedHelper.cs" />
+    <Compile Include="Migrations\SeedHelpers\MembersSeedHelper.cs" />
+    <Compile Include="Migrations\SeedHelpers\TrainersSeedHelper.cs" />
+    <Compile Include="Migrations\SeedHelpers\TrainingsSeedHelper.cs" />
+    <Compile Include="Persistence\Repositories\AdRepository.cs" />
+    <Compile Include="Persistence\Repositories\DatabaseBackupRecordRepository.cs" />
+    <Compile Include="Persistence\Repositories\PersonalTrainingRecordRepository.cs" />
+    <Compile Include="Persistence\Repositories\MemberFinancialMovementRepository.cs" />
+    <Compile Include="Persistence\Repositories\SaleItemRepository.cs" />
+    <Compile Include="Persistence\Repositories\SaleRepository.cs" />
+    <Compile Include="Persistence\Repositories\ProductRepository.cs" />
+    <Compile Include="Persistence\Repositories\ProductTypeRepository.cs" />
+    <Compile Include="Persistence\Repositories\CheckinRepository.cs" />
+    <Compile Include="Persistence\Repositories\PaymentRepository.cs" />
+    <Compile Include="Persistence\Repositories\MembershipRepository.cs" />
+    <Compile Include="Persistence\Repositories\ShiftRepository.cs" />
+    <Compile Include="Persistence\Repositories\CityRepository.cs" />
+    <Compile Include="Persistence\Repositories\ContactRepository.cs" />
+    <Compile Include="Persistence\Repositories\MessageRepository.cs" />
+    <Compile Include="Persistence\Repositories\NoteRepository.cs" />
+    <Compile Include="Persistence\Repositories\ParameterRepository.cs" />
+    <Compile Include="Persistence\Repositories\TrainerRepository.cs" />
+    <Compile Include="Persistence\Repositories\TrainingRepository.cs" />
+    <Compile Include="Persistence\Repositories\UserRepository.cs" />
+    <Compile Include="Factories\UnitOfWorkFactory.cs" />
+    <Compile Include="Presenters\StatisticsPresenter.cs" />
+    <Compile Include="Presenters\Contracts\IStatisticsPresenter.cs" />
+    <Compile Include="Presenters\UserProfilePresenter.cs" />
+    <Compile Include="Presenters\Contracts\IUserProfilePresenter.cs" />
+    <Compile Include="Presenters\MemberDashboardPresenter.cs" />
+    <Compile Include="Presenters\BMICalculatorPresenter.cs" />
+    <Compile Include="Presenters\AdConfigurationPresenter.cs" />
+    <Compile Include="Presenters\Contracts\IMemberDashboardPresenter.cs" />
+    <Compile Include="Presenters\Contracts\IBMICalculatorPresenter.cs" />
+    <Compile Include="Presenters\Contracts\IAdConfigurationPresenter.cs" />
+    <Compile Include="Presenters\Contracts\IDatabaseBackupRecordsPresenter.cs" />
+    <Compile Include="Presenters\Contracts\IMemberLoginPresenter.cs" />
+    <Compile Include="Presenters\DatabaseBackupRecordsPresenter.cs" />
+    <Compile Include="Presenters\MemberLoginPresenter.cs" />
+    <Compile Include="Presenters\PersonalTrainingRecordPresenter.cs" />
+    <Compile Include="Presenters\Contracts\IDeletedMembersPresenter.cs" />
+    <Compile Include="Presenters\Contracts\INewSalePresenter.cs" />
+    <Compile Include="Presenters\Contracts\IPersonalTrainingRecordPresenter.cs" />
+    <Compile Include="Presenters\Contracts\IReportConfigurationPresenter.cs" />
+    <Compile Include="Presenters\Contracts\IReportPresenter.cs" />
+    <Compile Include="Presenters\Contracts\IShiftsAndQuotasPresenter.cs" />
+    <Compile Include="Presenters\DeletedMembersPresenter.cs" />
+    <Compile Include="Presenters\NewSalePresenter.cs" />
+    <Compile Include="Builders\PresenterBuilder.cs" />
+    <Compile Include="Presenters\ProductPresenter.cs" />
+    <Compile Include="Presenters\CheckinPresenter.cs" />
+    <Compile Include="Presenters\CitiesPresenter.cs" />
+    <Compile Include="Presenters\ContactPresenter.cs" />
+    <Compile Include="Presenters\Contracts\IProductPresenter.cs" />
+    <Compile Include="Presenters\Contracts\ICheckinPresenter.cs" />
+    <Compile Include="Presenters\Contracts\ICitiesPresenter.cs" />
+    <Compile Include="Presenters\Contracts\IContactPresenter.cs" />
+    <Compile Include="Presenters\Contracts\ILoginPresenter.cs" />
+    <Compile Include="Presenters\Contracts\IMainPresenter.cs" />
+    <Compile Include="Presenters\Contracts\IMemberPresenter.cs" />
+    <Compile Include="Presenters\Contracts\IMembershipPresenter.cs" />
+    <Compile Include="Presenters\Contracts\IMessagePresenter.cs" />
+    <Compile Include="Presenters\Contracts\IMessagesPresenter.cs" />
+    <Compile Include="Presenters\Contracts\INotePresenter.cs" />
+    <Compile Include="Presenters\Contracts\IParametersPresenter.cs" />
+    <Compile Include="Presenters\Contracts\IMemberSearchPresenter.cs" />
+    <Compile Include="Presenters\Contracts\INewPaymentPresenter.cs" />
+    <Compile Include="Presenters\Contracts\IProductTypesPresenter.cs" />
+    <Compile Include="Presenters\Contracts\IShiftPresenter.cs" />
+    <Compile Include="Presenters\Contracts\ITrainerPresenter.cs" />
+    <Compile Include="Presenters\Contracts\ITrainingPresenter.cs" />
+    <Compile Include="Presenters\MembershipPresenter.cs" />
+    <Compile Include="Presenters\MessagePresenter.cs" />
+    <Compile Include="Presenters\MessagesPresenter.cs" />
+    <Compile Include="Presenters\NotePresenter.cs" />
+    <Compile Include="Presenters\LoginPresenter.cs" />
+    <Compile Include="Presenters\MainPresenter.cs" />
+    <Compile Include="Presenters\MemberPresenter.cs" />
+    <Compile Include="Presenters\ParametersPresenter.cs" />
+    <Compile Include="Presenters\MemberSearchPresenter.cs" />
+    <Compile Include="Presenters\NewPaymentPresenter.cs" />
+    <Compile Include="Presenters\ProductTypesPresenter.cs" />
+    <Compile Include="Presenters\ReportConfigurationPresenter.cs" />
+    <Compile Include="Presenters\ReportPresenter.cs" />
+    <Compile Include="Presenters\ShiftPresenter.cs" />
+    <Compile Include="Presenters\ShiftsAndQuotasPresenter.cs" />
+    <Compile Include="Presenters\TrainerPresenter.cs" />
+    <Compile Include="Presenters\TrainingPresenter.cs" />
+    <Compile Include="Services\Contracts\IDatabaseBackupService.cs" />
+    <Compile Include="Services\Contracts\IMessagingService.cs" />
+    <Compile Include="Services\Contracts\IRunnerService.cs" />
+    <Compile Include="Services\Contracts\IAuthenticationService.cs" />
+    <Compile Include="Services\AuthenticationService.cs" />
+    <Compile Include="Services\Contracts\IFinancialService.cs" />
+    <Compile Include="Services\Contracts\IMembershipsService.cs" />
+    <Compile Include="Services\Contracts\ISentryService.cs" />
+    <Compile Include="Services\Contracts\IStatisticsService.cs" />
+    <Compile Include="Services\DatabaseBackupService.cs" />
+    <Compile Include="Services\FinancialService.cs" />
+    <Compile Include="Services\MembershipsService.cs" />
+    <Compile Include="Services\MessagingService.cs" />
+    <Compile Include="Services\RunnerService.cs" />
+    <Compile Include="Services\SentryService.cs" />
+    <Compile Include="Services\ServiceLocator.cs" />
+    <Compile Include="Services\ServiceModels\LoginResult.cs" />
+    <Compile Include="Services\ServiceModels\QuickStats.cs" />
+    <Compile Include="Services\StatisticsService.cs" />
+    <Compile Include="Views\Contracts\IAdConfigurationView.cs" />
+    <Compile Include="Views\Contracts\IStatisticsView.cs" />
+    <Compile Include="Views\Contracts\IBMICalculatorView.cs" />
+    <Compile Include="Views\Contracts\IUserProfileView.cs" />
+    <Compile Include="Views\Contracts\ICheckinView.cs" />
+    <Compile Include="Views\Contracts\ICitiesView.cs" />
+    <Compile Include="Views\Contracts\IContactView.cs" />
+    <Compile Include="Views\Contracts\IDatabaseBackupRecordsView.cs" />
+    <Compile Include="Views\Contracts\IDeletedMembersView.cs" />
+    <Compile Include="Views\Contracts\ILoginView.cs" />
+    <Compile Include="Views\Contracts\IMainView.cs" />
+    <Compile Include="Views\Contracts\IMemberDashboardView.cs" />
+    <Compile Include="Views\Contracts\IMemberLoginView.cs" />
+    <Compile Include="Views\Contracts\IMembershipView.cs" />
+    <Compile Include="Views\Contracts\IMemberSearchView.cs" />
+    <Compile Include="Views\Contracts\IMemberView.cs" />
+    <Compile Include="Presenters\Contracts\IMembersPresenter.cs" />
+    <Compile Include="Presenters\Contracts\IPresenter.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Persistence\Repositories\MemberRepository.cs" />
+    <Compile Include="Persistence\Repositories\Repository.cs" />
+    <Compile Include="Persistence\UnitOfWork.cs" />
+    <Compile Include="Persistence\ZigguratContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Contracts\IMessagesView.cs" />
+    <Compile Include="Views\Contracts\IMessageView.cs" />
+    <Compile Include="Views\Contracts\INewSaleView.cs" />
+    <Compile Include="Views\Contracts\INoteView.cs" />
+    <Compile Include="Views\Contracts\IParametersView.cs" />
+    <Compile Include="Views\Contracts\INewPaymentView.cs" />
+    <Compile Include="Views\Contracts\IPersonalTrainingRecordView.cs" />
+    <Compile Include="Views\Contracts\IProductTypesView.cs" />
+    <Compile Include="Views\Contracts\IProductView.cs" />
+    <Compile Include="Views\Contracts\IReportConfigurationView.cs" />
+    <Compile Include="Views\Contracts\IReportView.cs" />
+    <Compile Include="Views\Contracts\IShiftsAndQuotasView.cs" />
+    <Compile Include="Views\Contracts\IShiftView.cs" />
+    <Compile Include="Views\Contracts\ISplashScreenView.cs" />
+    <Compile Include="Views\Contracts\ITrainerView.cs" />
+    <Compile Include="Views\Contracts\ITrainingView.cs" />
+    <Compile Include="Views\Contracts\IView.cs" />
+    <Compile Include="Views\Reports\CheckinsReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\Reports\CheckinsReport.Designer.cs">
+      <DependentUpon>CheckinsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reports\MemberFinancialMovementsReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\Reports\MemberFinancialMovementsReport.Designer.cs">
+      <DependentUpon>MemberFinancialMovementsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reports\MemberInfoReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\Reports\MemberInfoReport.Designer.cs">
+      <DependentUpon>MemberInfoReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reports\MembersReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\Reports\MembersReport.Designer.cs">
+      <DependentUpon>MembersReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reports\PersonalTrainingRecordsReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\Reports\PersonalTrainingRecordsReport.Designer.cs">
+      <DependentUpon>PersonalTrainingRecordsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reports\ProductsReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\Reports\ProductsReport.Designer.cs">
+      <DependentUpon>ProductsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reports\ReceiptReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\Reports\ReceiptReport.Designer.cs">
+      <DependentUpon>ReceiptReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reports\RedOnesReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\Reports\RedOnesReport.Designer.cs">
+      <DependentUpon>RedOnesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reports\SalesDetailReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\Reports\SalesDetailReport.Designer.cs">
+      <DependentUpon>SalesDetailReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reports\SalesMasterReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\Reports\SalesMasterReport.Designer.cs">
+      <DependentUpon>SalesMasterReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ViewModels\ActiveMembershipViewModel.cs" />
+    <Compile Include="Views\ViewModels\BirthdayViewModel.cs" />
+    <Compile Include="Views\ViewModels\DatabaseBackupRecordViewModel.cs" />
+    <Compile Include="Views\ViewModels\CheckinViewModel.cs" />
+    <Compile Include="Views\ViewModels\CityViewModel.cs" />
+    <Compile Include="Views\ViewModels\ContactViewModel.cs" />
+    <Compile Include="Views\ViewModels\DebtViewModel.cs" />
+    <Compile Include="Views\ViewModels\ViewModel.cs" />
+    <Compile Include="Views\ViewModels\MemberFinancialMovementViewModel.cs" />
+    <Compile Include="Views\ViewModels\MembershipViewModel.cs" />
+    <Compile Include="Views\ViewModels\MemberViewModel.cs" />
+    <Compile Include="Views\ViewModels\MessageViewModel.cs" />
+    <Compile Include="Views\ViewModels\NoteViewModel.cs" />
+    <Compile Include="Views\ViewModels\PaymentViewModel.cs" />
+    <Compile Include="Views\ViewModels\PersonalTrainingRecordViewModel.cs" />
+    <Compile Include="Views\ViewModels\ProductTypeViewModel.cs" />
+    <Compile Include="Views\ViewModels\ProductViewModel.cs" />
+    <Compile Include="Views\ViewModels\ReportConfigurationViewModel.cs" />
+    <Compile Include="Views\ViewModels\ReportConfigViewModel.cs" />
+    <Compile Include="Views\ViewModels\SaleItemViewModel.cs" />
+    <Compile Include="Views\ViewModels\SaleViewModel.cs" />
+    <Compile Include="Views\ViewModels\ShiftViewModel.cs" />
+    <Compile Include="Views\ViewModels\TrainerViewModel.cs" />
+    <Compile Include="Views\ViewModels\TrainingViewModel.cs" />
+    <Compile Include="Views\ViewModels\UserViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201801142040073_InitialModel.resx">
+      <DependentUpon>201801142040073_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801150025088_AddContactsTable.resx">
+      <DependentUpon>201801150025088_AddContactsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801180123022_AddParametersTable.resx">
+      <DependentUpon>201801180123022_AddParametersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801182155461_AddGymCityIdColumnToParametersTable.resx">
+      <DependentUpon>201801182155461_AddGymCityIdColumnToParametersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801200159424_AddProfilePicturePathToMembersTable.resx">
+      <DependentUpon>201801200159424_AddProfilePicturePathToMembersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801201035306_AddProfilePictureSizeModeToMembersTable.resx">
+      <DependentUpon>201801201035306_AddProfilePictureSizeModeToMembersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801230203069_AddNotesTable.resx">
+      <DependentUpon>201801230203069_AddNotesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801250155108_AddTrainersTable.resx">
+      <DependentUpon>201801250155108_AddTrainersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802032339411_AddSkinColumnToParametersTable.resx">
+      <DependentUpon>201802032339411_AddSkinColumnToParametersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802041841116_TrainingsTableAndTrainersRelationship.resx">
+      <DependentUpon>201802041841116_TrainingsTableAndTrainersRelationship.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802112237148_AddCreatedAndUpdatedAtToTrainingsTable.resx">
+      <DependentUpon>201802112237148_AddCreatedAndUpdatedAtToTrainingsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802112320078_AddDeletedFieldsToTrainingsTable.resx">
+      <DependentUpon>201802112320078_AddDeletedFieldsToTrainingsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802121717037_AddSelectAtLeastOneToParametersTable.resx">
+      <DependentUpon>201802121717037_AddSelectAtLeastOneToParametersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802121951164_AddQuarterPriceToTrainingsTable.resx">
+      <DependentUpon>201802121951164_AddQuarterPriceToTrainingsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802122256214_AddSplitContainerMembersSplitterPositionToParametersTable.resx">
+      <DependentUpon>201802122256214_AddSplitContainerMembersSplitterPositionToParametersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802141404187_AddMessagesTable.resx">
+      <DependentUpon>201802141404187_AddMessagesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802151219045_AddShiftsTable.resx">
+      <DependentUpon>201802151219045_AddShiftsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802161347026_AddMembershipsTable.resx">
+      <DependentUpon>201802161347026_AddMembershipsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803101352559_AddCheckinsTable.resx">
+      <DependentUpon>201803101352559_AddCheckinsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803160102289_AddSplitContainerMembersHorizontalSplitterPositionToParameterTable.resx">
+      <DependentUpon>201803160102289_AddSplitContainerMembersHorizontalSplitterPositionToParameterTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803192247015_IsActiveChangedToStatusInMembershipsTable.resx">
+      <DependentUpon>201803192247015_IsActiveChangedToStatusInMembershipsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803282327296_AddPaymentTable.resx">
+      <DependentUpon>201803282327296_AddPaymentTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803282328230_RenameDateTimeToDate.resx">
+      <DependentUpon>201803282328230_RenameDateTimeToDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803292318427_IsFullyPaidFieldToMembershipsTable.resx">
+      <DependentUpon>201803292318427_IsFullyPaidFieldToMembershipsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803292321335_CommentFieldToPaymentsTable.resx">
+      <DependentUpon>201803292321335_CommentFieldToPaymentsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803300511361_DeleteSaleIdFromPaymentsTable.resx">
+      <DependentUpon>201803300511361_DeleteSaleIdFromPaymentsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803300521180_PaymentMembershipRelationship.resx">
+      <DependentUpon>201803300521180_PaymentMembershipRelationship.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803302231229_AddConceptFieldToPaymentsTable.resx">
+      <DependentUpon>201803302231229_AddConceptFieldToPaymentsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804011435352_AddProductAndProductTypesTables.resx">
+      <DependentUpon>201804011435352_AddProductAndProductTypesTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804012253403_ProductIsActiveFromByteToBool.resx">
+      <DependentUpon>201804012253403_ProductIsActiveFromByteToBool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804020015397_AddSaleAndSaleItemsTable.resx">
+      <DependentUpon>201804020015397_AddSaleAndSaleItemsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804080054584_AddIsFullyPaidToSalesTable.resx">
+      <DependentUpon>201804080054584_AddIsFullyPaidToSalesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804080308584_PaymentMembershipSaleRelationships.resx">
+      <DependentUpon>201804080308584_PaymentMembershipSaleRelationships.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804081717096_AddQuotaToShiftsTable.resx">
+      <DependentUpon>201804081717096_AddQuotaToShiftsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804211133373_AddMemberFinancialMovementsTable.resx">
+      <DependentUpon>201804211133373_AddMemberFinancialMovementsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804211212200_AddSaleNumber.resx">
+      <DependentUpon>201804211212200_AddSaleNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804211733401_AddReferenceFieldsInMemberFinancialMovementsTable.resx">
+      <DependentUpon>201804211733401_AddReferenceFieldsInMemberFinancialMovementsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804232321571_PersonalTrainingRecordsTable.resx">
+      <DependentUpon>201804232321571_PersonalTrainingRecordsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804240206347_HeigthToHeight.resx">
+      <DependentUpon>201804240206347_HeigthToHeight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805022304530_AddDatabaseBackupRecords.resx">
+      <DependentUpon>201805022304530_AddDatabaseBackupRecords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805032226238_ParametersGymData.resx">
+      <DependentUpon>201805032226238_ParametersGymData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805040113063_AdTable.resx">
+      <DependentUpon>201805040113063_AdTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805060458281_140To1000ForAdText.resx">
+      <DependentUpon>201805060458281_140To1000ForAdText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805092229241_StartAndEndTimeInShiftsTable.resx">
+      <DependentUpon>201805092229241_StartAndEndTimeInShiftsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Views\Reports\CheckinsReport.resx">
+      <DependentUpon>CheckinsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\MemberFinancialMovementsReport.resx">
+      <DependentUpon>MemberFinancialMovementsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\MemberInfoReport.resx">
+      <DependentUpon>MemberInfoReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\MembersReport.resx">
+      <DependentUpon>MembersReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\PersonalTrainingRecordsReport.resx">
+      <DependentUpon>PersonalTrainingRecordsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\ProductsReport.resx">
+      <DependentUpon>ProductsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\ReceiptReport.resx">
+      <DependentUpon>ReceiptReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\RedOnesReport.resx">
+      <DependentUpon>RedOnesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\SalesDetailReport.resx">
+      <DependentUpon>SalesDetailReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\SalesMasterReport.resx">
+      <DependentUpon>SalesMasterReport.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="extra\SQLEXPR_x64_ENU.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="extra\SQLEXPR_x86_ENU.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="help\css\bootstrap.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="help\css\starter-template.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="help\favicon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="help\index.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="help\js\bootstrap.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="help\js\jquery-3.1.1.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="help\miembros\buscar.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>RD /S /Q "$(TargetDir)de\"
+RD /S /Q "$(TargetDir)de-DE\"
+RD /S /Q "$(TargetDir)ja\"
+RD /S /Q "$(TargetDir)ru\"</PostBuildEvent>
+  </PropertyGroup>
+</Project>
