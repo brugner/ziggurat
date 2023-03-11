@@ -351,6 +351,9 @@ namespace Corlib.Services
 
 					var totalDays = (DateTime.Today - firstCheckinDate.Value).TotalDays;
 
+					if (totalDays < 1)
+						totalDays = 1;
+
 					var result = totalCheckins / (decimal)totalDays;
 					return Math.Round(result, 2);
 				}

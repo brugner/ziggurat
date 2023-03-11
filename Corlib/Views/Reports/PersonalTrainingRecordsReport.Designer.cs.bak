@@ -120,7 +120,7 @@
          // 
          this.xrLabel28.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "Query.Waist")});
-         this.xrLabel28.Font = new DevExpress.Drawing.DXFont("Tahoma", 10F);
+         this.xrLabel28.Font = new System.Drawing.Font("Tahoma", 10F);
          this.xrLabel28.LocationFloat = new DevExpress.Utils.PointFloat(411.3748F, 46F);
          this.xrLabel28.Name = "xrLabel28";
          this.xrLabel28.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -134,7 +134,7 @@
          // 
          this.xrLabel27.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "Query.Thighs")});
-         this.xrLabel27.Font = new DevExpress.Drawing.DXFont("Tahoma", 10F);
+         this.xrLabel27.Font = new System.Drawing.Font("Tahoma", 10F);
          this.xrLabel27.LocationFloat = new DevExpress.Utils.PointFloat(411.3748F, 22.99999F);
          this.xrLabel27.Name = "xrLabel27";
          this.xrLabel27.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -148,7 +148,7 @@
          // 
          this.xrLabel26.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "Query.Shoulders")});
-         this.xrLabel26.Font = new DevExpress.Drawing.DXFont("Tahoma", 10F);
+         this.xrLabel26.Font = new System.Drawing.Font("Tahoma", 10F);
          this.xrLabel26.LocationFloat = new DevExpress.Utils.PointFloat(241.6666F, 46F);
          this.xrLabel26.Name = "xrLabel26";
          this.xrLabel26.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -162,7 +162,7 @@
          // 
          this.xrLabel25.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "Query.Neck")});
-         this.xrLabel25.Font = new DevExpress.Drawing.DXFont("Tahoma", 10F);
+         this.xrLabel25.Font = new System.Drawing.Font("Tahoma", 10F);
          this.xrLabel25.LocationFloat = new DevExpress.Utils.PointFloat(65.4583F, 68.99995F);
          this.xrLabel25.Name = "xrLabel25";
          this.xrLabel25.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -176,7 +176,7 @@
          // 
          this.xrLabel24.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "Query.Forearms")});
-         this.xrLabel24.Font = new DevExpress.Drawing.DXFont("Tahoma", 10F);
+         this.xrLabel24.Font = new System.Drawing.Font("Tahoma", 10F);
          this.xrLabel24.LocationFloat = new DevExpress.Utils.PointFloat(592.4166F, 22.99999F);
          this.xrLabel24.Name = "xrLabel24";
          this.xrLabel24.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -190,7 +190,7 @@
          // 
          this.xrLabel23.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "Query.Chest")});
-         this.xrLabel23.Font = new DevExpress.Drawing.DXFont("Tahoma", 10F);
+         this.xrLabel23.Font = new System.Drawing.Font("Tahoma", 10F);
          this.xrLabel23.LocationFloat = new DevExpress.Utils.PointFloat(241.6666F, 22.99999F);
          this.xrLabel23.Name = "xrLabel23";
          this.xrLabel23.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -204,7 +204,7 @@
          // 
          this.xrLabel22.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "Query.Calves")});
-         this.xrLabel22.Font = new DevExpress.Drawing.DXFont("Tahoma", 10F);
+         this.xrLabel22.Font = new System.Drawing.Font("Tahoma", 10F);
          this.xrLabel22.LocationFloat = new DevExpress.Utils.PointFloat(592.4166F, 45.99997F);
          this.xrLabel22.Name = "xrLabel22";
          this.xrLabel22.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -218,7 +218,7 @@
          // 
          this.xrLabel21.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "Query.Buttocks")});
-         this.xrLabel21.Font = new DevExpress.Drawing.DXFont("Tahoma", 10F);
+         this.xrLabel21.Font = new System.Drawing.Font("Tahoma", 10F);
          this.xrLabel21.LocationFloat = new DevExpress.Utils.PointFloat(411.3749F, 68.99995F);
          this.xrLabel21.Name = "xrLabel21";
          this.xrLabel21.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -232,7 +232,7 @@
          // 
          this.xrLabel20.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "Query.Biceps")});
-         this.xrLabel20.Font = new DevExpress.Drawing.DXFont("Tahoma", 10F);
+         this.xrLabel20.Font = new System.Drawing.Font("Tahoma", 10F);
          this.xrLabel20.LocationFloat = new DevExpress.Utils.PointFloat(241.6666F, 68.99999F);
          this.xrLabel20.Name = "xrLabel20";
          this.xrLabel20.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -246,7 +246,7 @@
          // 
          this.xrLabel19.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "Query.Comment")});
-         this.xrLabel19.Font = new DevExpress.Drawing.DXFont("Tahoma", 10F, DevExpress.Drawing.DXFontStyle.Italic);
+         this.xrLabel19.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Italic);
          this.xrLabel19.LocationFloat = new DevExpress.Utils.PointFloat(104.0001F, 91.99995F);
          this.xrLabel19.Name = "xrLabel19";
          this.xrLabel19.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -258,7 +258,7 @@
          // 
          // xrLabel18
          // 
-         this.xrLabel18.Font = new DevExpress.Drawing.DXFont("Tahoma", 10F, DevExpress.Drawing.DXFontStyle.Bold);
+         this.xrLabel18.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
          this.xrLabel18.LocationFloat = new DevExpress.Utils.PointFloat(9.999974F, 91.99995F);
          this.xrLabel18.Name = "xrLabel18";
          this.xrLabel18.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -270,7 +270,7 @@
          // 
          // xrLabel17
          // 
-         this.xrLabel17.Font = new DevExpress.Drawing.DXFont("Tahoma", 10F, DevExpress.Drawing.DXFontStyle.Bold);
+         this.xrLabel17.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
          this.xrLabel17.LocationFloat = new DevExpress.Utils.PointFloat(347.3333F, 68.99995F);
          this.xrLabel17.Name = "xrLabel17";
          this.xrLabel17.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -282,7 +282,7 @@
          // 
          // xrLabel16
          // 
-         this.xrLabel16.Font = new DevExpress.Drawing.DXFont("Tahoma", 10F, DevExpress.Drawing.DXFontStyle.Bold);
+         this.xrLabel16.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
          this.xrLabel16.LocationFloat = new DevExpress.Utils.PointFloat(169.6249F, 68.99995F);
          this.xrLabel16.Name = "xrLabel16";
          this.xrLabel16.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -294,7 +294,7 @@
          // 
          // xrLabel15
          // 
-         this.xrLabel15.Font = new DevExpress.Drawing.DXFont("Tahoma", 10F, DevExpress.Drawing.DXFontStyle.Bold);
+         this.xrLabel15.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
          this.xrLabel15.LocationFloat = new DevExpress.Utils.PointFloat(502.3749F, 45.99997F);
          this.xrLabel15.Name = "xrLabel15";
          this.xrLabel15.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -308,7 +308,7 @@
          // 
          this.xrLabel14.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "Query.Height")});
-         this.xrLabel14.Font = new DevExpress.Drawing.DXFont("Tahoma", 10F);
+         this.xrLabel14.Font = new System.Drawing.Font("Tahoma", 10F);
          this.xrLabel14.LocationFloat = new DevExpress.Utils.PointFloat(65.4583F, 45.99997F);
          this.xrLabel14.Name = "xrLabel14";
          this.xrLabel14.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -322,7 +322,7 @@
          // 
          this.xrLabel13.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "Query.Weight")});
-         this.xrLabel13.Font = new DevExpress.Drawing.DXFont("Tahoma", 10F);
+         this.xrLabel13.Font = new System.Drawing.Font("Tahoma", 10F);
          this.xrLabel13.LocationFloat = new DevExpress.Utils.PointFloat(65.4583F, 22.99999F);
          this.xrLabel13.Name = "xrLabel13";
          this.xrLabel13.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -334,7 +334,7 @@
          // 
          // xrLabel12
          // 
-         this.xrLabel12.Font = new DevExpress.Drawing.DXFont("Tahoma", 10F, DevExpress.Drawing.DXFontStyle.Bold);
+         this.xrLabel12.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
          this.xrLabel12.LocationFloat = new DevExpress.Utils.PointFloat(347.3333F, 22.99999F);
          this.xrLabel12.Name = "xrLabel12";
          this.xrLabel12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -346,7 +346,7 @@
          // 
          // xrLabel11
          // 
-         this.xrLabel11.Font = new DevExpress.Drawing.DXFont("Tahoma", 10F, DevExpress.Drawing.DXFontStyle.Bold);
+         this.xrLabel11.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
          this.xrLabel11.LocationFloat = new DevExpress.Utils.PointFloat(502.9581F, 22.99999F);
          this.xrLabel11.Name = "xrLabel11";
          this.xrLabel11.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -358,7 +358,7 @@
          // 
          // xrLabel10
          // 
-         this.xrLabel10.Font = new DevExpress.Drawing.DXFont("Tahoma", 10F, DevExpress.Drawing.DXFontStyle.Bold);
+         this.xrLabel10.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
          this.xrLabel10.LocationFloat = new DevExpress.Utils.PointFloat(347.3333F, 45.99997F);
          this.xrLabel10.Name = "xrLabel10";
          this.xrLabel10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -370,7 +370,7 @@
          // 
          // xrLabel9
          // 
-         this.xrLabel9.Font = new DevExpress.Drawing.DXFont("Tahoma", 10F, DevExpress.Drawing.DXFontStyle.Bold);
+         this.xrLabel9.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
          this.xrLabel9.LocationFloat = new DevExpress.Utils.PointFloat(169.6249F, 22.99999F);
          this.xrLabel9.Name = "xrLabel9";
          this.xrLabel9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -382,7 +382,7 @@
          // 
          // xrLabel8
          // 
-         this.xrLabel8.Font = new DevExpress.Drawing.DXFont("Tahoma", 10F, DevExpress.Drawing.DXFontStyle.Bold);
+         this.xrLabel8.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
          this.xrLabel8.LocationFloat = new DevExpress.Utils.PointFloat(169.6249F, 45.99997F);
          this.xrLabel8.Name = "xrLabel8";
          this.xrLabel8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -394,7 +394,7 @@
          // 
          // xrLabel7
          // 
-         this.xrLabel7.Font = new DevExpress.Drawing.DXFont("Tahoma", 10F, DevExpress.Drawing.DXFontStyle.Bold);
+         this.xrLabel7.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
          this.xrLabel7.LocationFloat = new DevExpress.Utils.PointFloat(9.999974F, 68.99995F);
          this.xrLabel7.Name = "xrLabel7";
          this.xrLabel7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -406,7 +406,7 @@
          // 
          // xrLabel6
          // 
-         this.xrLabel6.Font = new DevExpress.Drawing.DXFont("Tahoma", 10F, DevExpress.Drawing.DXFontStyle.Bold);
+         this.xrLabel6.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
          this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 45.99997F);
          this.xrLabel6.Name = "xrLabel6";
          this.xrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -418,7 +418,7 @@
          // 
          // xrLabel5
          // 
-         this.xrLabel5.Font = new DevExpress.Drawing.DXFont("Tahoma", 10F, DevExpress.Drawing.DXFontStyle.Bold);
+         this.xrLabel5.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
          this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 22.99999F);
          this.xrLabel5.Name = "xrLabel5";
          this.xrLabel5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -443,7 +443,7 @@
          // 
          this.xrLabel3.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "Query.Date", "{0:dd/MM/yyyy}")});
-         this.xrLabel3.Font = new DevExpress.Drawing.DXFont("Tahoma", 10F);
+         this.xrLabel3.Font = new System.Drawing.Font("Tahoma", 10F);
          this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(51.04163F, 0F);
          this.xrLabel3.Name = "xrLabel3";
          this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -455,7 +455,7 @@
          // 
          // xrLabel4
          // 
-         this.xrLabel4.Font = new DevExpress.Drawing.DXFont("Tahoma", 10F, DevExpress.Drawing.DXFontStyle.Bold);
+         this.xrLabel4.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
          this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
          this.xrLabel4.Name = "xrLabel4";
          this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -478,7 +478,7 @@
          // 
          this.xrLabel2.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "Parameters.GymName")});
-         this.xrLabel2.Font = new DevExpress.Drawing.DXFont("Tahoma", 14F, DevExpress.Drawing.DXFontStyle.Bold);
+         this.xrLabel2.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold);
          this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 10.00001F);
          this.xrLabel2.Name = "xrLabel2";
          this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -551,7 +551,7 @@
          // 
          this.xrLabel29.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "Query.Member")});
-         this.xrLabel29.Font = new DevExpress.Drawing.DXFont("Tahoma", 11F);
+         this.xrLabel29.Font = new System.Drawing.Font("Tahoma", 11F);
          this.xrLabel29.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 36F);
          this.xrLabel29.Name = "xrLabel29";
          this.xrLabel29.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -563,7 +563,7 @@
          // 
          // xrLabel1
          // 
-         this.xrLabel1.Font = new DevExpress.Drawing.DXFont("Tahoma", 14F);
+         this.xrLabel1.Font = new System.Drawing.Font("Tahoma", 14F);
          this.xrLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
          this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(10.00001F, 10.00001F);
          this.xrLabel1.Name = "xrLabel1";
@@ -609,7 +609,7 @@
          this.Title.BorderColor = System.Drawing.Color.Black;
          this.Title.Borders = DevExpress.XtraPrinting.BorderSide.None;
          this.Title.BorderWidth = 1F;
-         this.Title.Font = new DevExpress.Drawing.DXFont("Tahoma", 14F);
+         this.Title.Font = new System.Drawing.Font("Tahoma", 14F);
          this.Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
          this.Title.Name = "Title";
          // 
@@ -619,7 +619,7 @@
          this.DetailData3_Odd.BorderColor = System.Drawing.Color.Transparent;
          this.DetailData3_Odd.Borders = DevExpress.XtraPrinting.BorderSide.None;
          this.DetailData3_Odd.BorderWidth = 1F;
-         this.DetailData3_Odd.Font = new DevExpress.Drawing.DXFont("Tahoma", 8F);
+         this.DetailData3_Odd.Font = new System.Drawing.Font("Tahoma", 8F);
          this.DetailData3_Odd.ForeColor = System.Drawing.Color.Black;
          this.DetailData3_Odd.Name = "DetailData3_Odd";
          this.DetailData3_Odd.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 6, 0, 0, 100F);
@@ -627,7 +627,7 @@
          // 
          // PageInfo
          // 
-         this.PageInfo.Font = new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold);
+         this.PageInfo.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
          this.PageInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
          this.PageInfo.Name = "PageInfo";
          this.PageInfo.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -650,7 +650,7 @@
          this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
             this.sqlDataSource1});
          this.DataSource = this.sqlDataSource1;
-         this.Margins = new DevExpress.Drawing.DXMargins(100, 100, 60, 100);
+         this.Margins = new System.Drawing.Printing.Margins(100, 100, 60, 100);
          this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
             this.Id});
          this.StyleSheet.AddRange(new DevExpress.XtraReports.UI.XRControlStyle[] {

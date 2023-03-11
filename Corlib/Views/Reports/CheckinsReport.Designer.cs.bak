@@ -107,7 +107,7 @@
          // 
          this.xrTableCell10.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "MainData.Member")});
-         this.xrTableCell10.Font = new DevExpress.Drawing.DXFont("Tahoma", 10F);
+         this.xrTableCell10.Font = new System.Drawing.Font("Tahoma", 10F);
          this.xrTableCell10.Name = "xrTableCell10";
          this.xrTableCell10.StyleName = "DetailData3";
          this.xrTableCell10.StylePriority.UseFont = false;
@@ -117,7 +117,7 @@
          // 
          this.xrTableCell11.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "MainData.Training")});
-         this.xrTableCell11.Font = new DevExpress.Drawing.DXFont("Tahoma", 10F);
+         this.xrTableCell11.Font = new System.Drawing.Font("Tahoma", 10F);
          this.xrTableCell11.Name = "xrTableCell11";
          this.xrTableCell11.StyleName = "DetailData3";
          this.xrTableCell11.StylePriority.UseFont = false;
@@ -127,7 +127,7 @@
          // 
          this.xrTableCell12.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "MainData.Date")});
-         this.xrTableCell12.Font = new DevExpress.Drawing.DXFont("Tahoma", 10F);
+         this.xrTableCell12.Font = new System.Drawing.Font("Tahoma", 10F);
          this.xrTableCell12.Name = "xrTableCell12";
          this.xrTableCell12.StyleName = "DetailData3";
          this.xrTableCell12.StylePriority.UseFont = false;
@@ -146,7 +146,7 @@
          // 
          this.xrLabel2.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding("Text", null, "Parameters.GymName")});
-         this.xrLabel2.Font = new DevExpress.Drawing.DXFont("Tahoma", 14F, DevExpress.Drawing.DXFontStyle.Bold);
+         this.xrLabel2.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Bold);
          this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(10F, 10F);
          this.xrLabel2.Name = "xrLabel2";
          this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -168,7 +168,7 @@
          // 
          // xrPageInfo1
          // 
-         this.xrPageInfo1.Font = new DevExpress.Drawing.DXFont("Segoe UI", 8F, DevExpress.Drawing.DXFontStyle.Bold);
+         this.xrPageInfo1.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
          this.xrPageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(6F, 6F);
          this.xrPageInfo1.Name = "xrPageInfo1";
          this.xrPageInfo1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -179,7 +179,7 @@
          // 
          // xrPageInfo2
          // 
-         this.xrPageInfo2.Font = new DevExpress.Drawing.DXFont("Segoe UI", 8F, DevExpress.Drawing.DXFontStyle.Bold);
+         this.xrPageInfo2.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold);
          this.xrPageInfo2.Format = "{0}/{1}";
          this.xrPageInfo2.LocationFloat = new DevExpress.Utils.PointFloat(331F, 6F);
          this.xrPageInfo2.Name = "xrPageInfo2";
@@ -222,7 +222,7 @@
          this.xrLabel1.BackColor = System.Drawing.Color.Transparent;
          this.xrLabel1.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
             new DevExpress.XtraReports.UI.XRBinding(this.ReportTitle, "Text", "")});
-         this.xrLabel1.Font = new DevExpress.Drawing.DXFont("Tahoma", 12F, DevExpress.Drawing.DXFontStyle.Bold);
+         this.xrLabel1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
          this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(6F, 6F);
          this.xrLabel1.Name = "xrLabel1";
          this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -269,7 +269,7 @@
          // xrTableCell4
          // 
          this.xrTableCell4.BackColor = System.Drawing.Color.Silver;
-         this.xrTableCell4.Font = new DevExpress.Drawing.DXFont("Tahoma", 11F, DevExpress.Drawing.DXFontStyle.Bold);
+         this.xrTableCell4.Font = new System.Drawing.Font("Tahoma", 11F, System.Drawing.FontStyle.Bold);
          this.xrTableCell4.Name = "xrTableCell4";
          this.xrTableCell4.StyleName = "DetailCaption3";
          this.xrTableCell4.StylePriority.UseBackColor = false;
@@ -280,7 +280,7 @@
          // xrTableCell5
          // 
          this.xrTableCell5.BackColor = System.Drawing.Color.Silver;
-         this.xrTableCell5.Font = new DevExpress.Drawing.DXFont("Tahoma", 11F, DevExpress.Drawing.DXFontStyle.Bold);
+         this.xrTableCell5.Font = new System.Drawing.Font("Tahoma", 11F, System.Drawing.FontStyle.Bold);
          this.xrTableCell5.Name = "xrTableCell5";
          this.xrTableCell5.StyleName = "DetailCaption3";
          this.xrTableCell5.StylePriority.UseBackColor = false;
@@ -291,7 +291,7 @@
          // xrTableCell6
          // 
          this.xrTableCell6.BackColor = System.Drawing.Color.Silver;
-         this.xrTableCell6.Font = new DevExpress.Drawing.DXFont("Tahoma", 11F, DevExpress.Drawing.DXFontStyle.Bold);
+         this.xrTableCell6.Font = new System.Drawing.Font("Tahoma", 11F, System.Drawing.FontStyle.Bold);
          this.xrTableCell6.Name = "xrTableCell6";
          this.xrTableCell6.StyleName = "DetailCaption3";
          this.xrTableCell6.StylePriority.UseBackColor = false;
@@ -359,7 +359,7 @@
          this.Title.BorderColor = System.Drawing.Color.Black;
          this.Title.Borders = DevExpress.XtraPrinting.BorderSide.None;
          this.Title.BorderWidth = 1F;
-         this.Title.Font = new DevExpress.Drawing.DXFont("Tahoma", 14F);
+         this.Title.Font = new System.Drawing.Font("Tahoma", 14F);
          this.Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
          this.Title.Name = "Title";
          // 
@@ -368,7 +368,7 @@
          this.DetailCaption3.BackColor = System.Drawing.Color.Transparent;
          this.DetailCaption3.BorderColor = System.Drawing.Color.Transparent;
          this.DetailCaption3.Borders = DevExpress.XtraPrinting.BorderSide.None;
-         this.DetailCaption3.Font = new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold);
+         this.DetailCaption3.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
          this.DetailCaption3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
          this.DetailCaption3.Name = "DetailCaption3";
          this.DetailCaption3.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 6, 0, 0, 100F);
@@ -376,7 +376,7 @@
          // 
          // DetailData3
          // 
-         this.DetailData3.Font = new DevExpress.Drawing.DXFont("Tahoma", 8F);
+         this.DetailData3.Font = new System.Drawing.Font("Tahoma", 8F);
          this.DetailData3.ForeColor = System.Drawing.Color.Black;
          this.DetailData3.Name = "DetailData3";
          this.DetailData3.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 6, 0, 0, 100F);
@@ -388,7 +388,7 @@
          this.DetailData3_Odd.BorderColor = System.Drawing.Color.Transparent;
          this.DetailData3_Odd.Borders = DevExpress.XtraPrinting.BorderSide.None;
          this.DetailData3_Odd.BorderWidth = 1F;
-         this.DetailData3_Odd.Font = new DevExpress.Drawing.DXFont("Tahoma", 8F);
+         this.DetailData3_Odd.Font = new System.Drawing.Font("Tahoma", 8F);
          this.DetailData3_Odd.ForeColor = System.Drawing.Color.Black;
          this.DetailData3_Odd.Name = "DetailData3_Odd";
          this.DetailData3_Odd.Padding = new DevExpress.XtraPrinting.PaddingInfo(6, 6, 0, 0, 100F);
@@ -404,7 +404,7 @@
          // 
          // PageInfo
          // 
-         this.PageInfo.Font = new DevExpress.Drawing.DXFont("Tahoma", 8F, DevExpress.Drawing.DXFontStyle.Bold);
+         this.PageInfo.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
          this.PageInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
          this.PageInfo.Name = "PageInfo";
          this.PageInfo.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -446,7 +446,7 @@
             this.sqlDataSource1});
          this.DataMember = "MainData";
          this.DataSource = this.sqlDataSource1;
-         this.Margins = new DevExpress.Drawing.DXMargins(100, 100, 60, 100);
+         this.Margins = new System.Drawing.Printing.Margins(100, 100, 60, 100);
          this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
             this.From,
             this.ReportTitle,
