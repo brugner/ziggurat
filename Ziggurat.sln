@@ -1,13 +1,33 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26730.8
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Management", "Management\Management.csproj", "{E2E4A37D-EBA1-4ED6-B67C-58E37A8FE3A4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corlib", "Corlib\Corlib.csproj", "{DD6030D6-64D2-427D-989F-7B4EF0B08B8E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessControl", "AccessControl\AccessControl.csproj", "{9EF45B2D-E629-4E72-8F0B-E7DBE1B6AFA2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9B6661F2-14DD-4154-94DD-CCDDB25941A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pictures", "Pictures", "{AA1F9B12-02CE-41A0-9D0F-6A35AD06C9AA}"
+	ProjectSection(SolutionItems) = preProject
+		Pictures\about.png = Pictures\about.png
+		Pictures\activities.png = Pictures\activities.png
+		Pictures\dashboard.png = Pictures\dashboard.png
+		Pictures\help.png = Pictures\help.png
+		Pictures\member memberships.png = Pictures\member memberships.png
+		Pictures\member.png = Pictures\member.png
+		Pictures\members.png = Pictures\members.png
+		Pictures\membersreport.png = Pictures\membersreport.png
+		Pictures\membersstats.png = Pictures\membersstats.png
+		Pictures\newsale.png = Pictures\newsale.png
+		Pictures\other.png = Pictures\other.png
+		Pictures\parameters.png = Pictures\parameters.png
+		Pictures\quickstats.png = Pictures\quickstats.png
+		Pictures\salestats.png = Pictures\salestats.png
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,6 +50,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AA1F9B12-02CE-41A0-9D0F-6A35AD06C9AA} = {9B6661F2-14DD-4154-94DD-CCDDB25941A2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7B2C633F-F8DA-4B93-BAA9-3B5C87847FAB}
